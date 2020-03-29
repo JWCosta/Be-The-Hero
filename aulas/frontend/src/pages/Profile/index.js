@@ -47,77 +47,46 @@ export default function Profile() {
         history.push('/');
     }
 
-    return ( <
-        div className = "profile-conteiner" >
-        <
-        header >
+    return ( 
+        <div className = "profile-conteiner" >
+            <header>
 
-        <
-        img src = { logoImg }
-        alt = "Be The Hero" / >
+                <img src = { logoImg } alt = "Be The Hero" />
 
-        <
-        span > Bem vinda, { ongName } < /span>
+                <span > Bem vinda, { ongName } </span>
 
-        <
-        Link className = "button"
-        to = "/incidents/new" > Cadastrar novo caso < /Link> 
+                <Link className = "button" to = "/incidents/new" > Cadastrar novo caso </Link> 
 
-        <
-        button onClick = { hadleLogout }
-        type = "button" >
-        <
-        FiPower size = { 18 }
-        color = "#E02041" / >
-        <
-        /button>
+                <button onClick = { hadleLogout } type = "button" >
+                    <FiPower size = { 18 } color = "#E02041" />
+                </button>
 
-        <
-        /header> 
+            </header> 
 
-        <
-        h1 > Casos Cadastrados < /h1>   <
-        ul > {
-            incidents.map(incident => ( <
-                li key = { incident.id } >
+            <h1> Casos Cadastrados </h1>  
+            <ul> {incidents.map(incident => ( 
+                    <li key = { incident.id } >
 
-                <
-                strong > CASO: < /strong>   <
-                p > { incident.title } < /p>
+                        <strong > CASO: </strong>   
+                        <p> { incident.title } </p>
 
-                <
-                strong > DESCRIÇÃO: < /strong> <
-                p > { incident.description } < /p>
+                        <strong > DESCRIÇÃO: </strong> 
+                        <p> { incident.description } </p>
 
-                <
-                strong > VALOR: < /strong> <
-                p > {
-                    Intl.NumberFormat('pt-BR', {
-                        style: 'currency',
-                        currency: 'BRL'
-                    }).format(incident.value)
-                } < /p> 
+                        <strong > VALOR: </strong> 
+                        <p> {Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(incident.value)} </p> 
 
-                <
-                button onClick = {
-                    () => hadleDeleteIncident(incident.id)
-                }
-                type = "button" >
+                        <button onClick = {() => hadleDeleteIncident(incident.id)}type = "button" >
 
-                <
-                FiTrash2 size = { 20 }
-                color = "#a8a8b3" / >
+                            <FiTrash2 size = { 20 } color = "#a8a8b3" />
 
-                <
-                /button> 
+                        </button> 
 
-                <
-                /li >
-            ))
-        } <
-        /ul>
+                    </li>
+                ))
+            } 
+            </ul>
 
-        <
-        /div>
+            </div>
     );
 }
