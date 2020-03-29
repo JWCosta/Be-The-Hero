@@ -39,82 +39,42 @@ export default function Register() {
     }
     return (
 
-        <
-        div className = "register-conteiner" >
-        <
-        div className = "content" >
-        <
-        section >
-        <
-        img src = { logoImg }
-        alt = "Be The Hero" / >
-        <
-        h1 > Cadastro < /h1>  <
-        p > Faça se cadastro, entre na plataforma e ajude pessoas a encontrarem os casos de sua ONG < /p>
+        <div className = "register-conteiner" >
+            <div className = "content" >
+                <section >
+                <img src = { logoImg } alt = "Be The Hero" />
+                <h1> Cadastro </h1>  
+                <p> Faça se cadastro, entre na plataforma e ajude pessoas a encontrarem os casos de sua ONG </p>
 
 
-        <
-        Link className = "back-link"
-        to = "/" >
+                <Link className = "back-link" to = "/" >
 
-        <
-        FiArrowDownLeft size = { 16 }
-        color = "#E02041" / >
+                <FiArrowDownLeft size = { 16 } color = "#E02041" />
 
-        Não tenho cadastro
+                Não tenho cadastro
 
-        <
-        /Link>  < /
-        section >
+                </Link>  
+                </section>
 
-        <
-        form onSubmit = { handleRegister } >
-        <
-        input placeholder = "Nome da ONG"
-        value = { name }
-        onChange = { e => setName(e.target.value) }
-        / > <
-        input type = "email"
-        placeholder = "E-mail"
-        value = { email }
-        onChange = { e => setEmail(e.target.value) }
-        / > <
-        input placeholder = "WhatsApp"
-        value = { whatsapp }
-        onChange = { e => setWhatsapp(e.target.value) }
-        / >
+            <form onSubmit = { handleRegister } >
+                <input placeholder = "Nome da ONG" value = { name } onChange = { e => setName(e.target.value) } /> 
+                <input type = "email" placeholder = "E-mail" value = { email } onChange = { e => setEmail(e.target.value) } /> 
+                <input placeholder = "WhatsApp"value = { whatsapp } onChange = { e => setWhatsapp(e.target.value) }/>
 
-        <
-        div className = "input-group" >
+                <div className = "input-group" >
 
-        <
-        input placeholder = "Cidade"
-        value = { city }
-        onChange = { e => setCity(e.target.value) }
-        / > <
-        input placeholder = "UF"
-        style = {
-            { width: 80 }
-        }
-        value = { uf }
-        onChange = { e => setUF(e.target.value) }
-        /> 
+                <input placeholder = "Cidade" value = { city } onChange = { e => setCity(e.target.value) } />
+                <input placeholder = "UF" style = {{ width: 80 }} value = { uf } onChange = { e => setUF(e.target.value) }/> 
 
-        <
-        /div> 
+                </div> 
 
-        <
-        button className = "button"
-        type = "submit" > Cadastrar < /button> 
+                <button className = "button" type = "submit" > Cadastrar </button> 
 
-        <
-        /form>
+            </form>
 
-        <
-        /div> 
+            </div> 
 
-        <
-        /div>
+        </div>
     )
 
 }
