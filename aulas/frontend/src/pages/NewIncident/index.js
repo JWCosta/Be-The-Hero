@@ -47,8 +47,7 @@ export default function NewIncident() {
                     <p> Descreva o caso detalhadamente para encontrar um héroi para resolver isso </p>
 
 
-                    <Link className = "back-link"
-                    to = "/profile" >
+                    <Link className = "back-link" to = "/profile" >
 
                     <FiArrowDownLeft size = { 16 } color = "#E02041" />
 
