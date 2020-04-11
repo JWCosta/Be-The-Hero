@@ -24,5 +24,4 @@ foram utilizadas diversas tecnologias e ferramentas como :
 	✔Cross
 	✔Supertest
 
-    ![Alt text](/relative/frontend-index.png?raw=true "Optional Title")
-    ![Alt text](/relative/frontend-caso.png?raw=true "Optional Title")
+    ![](https://codenation-challenges.s3-us-west-1.amazonaws.com/react-11/image.png)
