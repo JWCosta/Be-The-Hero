@@ -29,3 +29,6 @@ Tela de Login ONG:
    
 Perfil da ONG e os casos cadastrados:
    # ![](https://github.com/JWCosta/Be-The-Hero/blob/master/.github/frontend-caso.png)
+   
+Tela de cadastro de novo caso:
+   # ![](https://github.com/JWCosta/Be-The-Hero/blob/master/.github/frontend-cadastro_caso.png)
