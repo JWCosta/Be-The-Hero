@@ -24,5 +24,5 @@ foram utilizadas diversas tecnologias e ferramentas como :
 	✔Cross
 	✔Supertest
 
-    ![](frontend-caso.png)
-    ![](frontend-index.png)
+    ![Alt text](/relative/path/to/frontend-index.png?raw=true "Optional Title")
+    ![Alt text](/relative/path/to/frontend-caso.png?raw=true "Optional Title")
