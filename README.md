@@ -24,4 +24,8 @@ foram utilizadas diversas tecnologias e ferramentas como :
 	✔Cross
 	✔Supertest
 
-    ![](https://github.com/JWCosta/Be-The-Hero/blob/master/.github/frontend-index.png)
+Tela de Login ONG:
+   # ![](https://github.com/JWCosta/Be-The-Hero/blob/master/.github/frontend-index.png)
+   
+Perfil da ONG e os casos cadastrados:
+   # ![](https://github.com/JWCosta/Be-The-Hero/blob/master/.github/frontend-caso.png)
