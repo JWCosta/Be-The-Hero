@@ -1,3 +1,4 @@
+# ![](https://github.com/JWCosta/Be-The-Hero/blob/master/aulas/frontend/src/assets/logo.svg)
 # Aplicação Web e mobile (Be The Hero) criada durante a semana OmniStack 11.0 💻🚀🚀
 
 Durante essa semana desenvolvemos uma aplicação web (Front-end e Back-end
